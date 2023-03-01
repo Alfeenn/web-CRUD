@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{if ge .finalValue 80}}
+<h1>Good! your Value is {{.finalValue}}</h1>
+{{else if ge .finalValue 60}}
+<h1>Enough, your final Value is {{.finalValue}}</h1>
+{{else}}
+<h1>Fucking stupid ! your final value is below standards ! </h1>
+{{end}}
+</body>
+</html>
